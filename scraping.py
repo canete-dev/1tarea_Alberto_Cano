@@ -13,9 +13,9 @@ url = "http://127.0.0.1:5500/holaMundo.html"
 request = requests.get(url)
 # Creamos un variable que almacene el contenido de la peticion
 htmlScrapeado = request.content
-# Creamos un variable que va a 
+# Creamos un variable que va a almacenar el objeto beautifulsoup y a este le pasamos el 
+# contenido de la peticion y el motor que vamos a usar para el parseo
 soup = BeautifulSoup(htmlScrapeado, "html.parser")
-print(soup)
 
 h1 = soup.find("h1")
 print(h1)
