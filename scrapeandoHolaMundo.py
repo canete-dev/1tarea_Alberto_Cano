@@ -18,4 +18,4 @@ htmlScrapeado = request.content
 soup = BeautifulSoup(htmlScrapeado, "html.parser")
 
 h1 = soup.find("h1")
-print(h1)
+print("h1 scrapeado:" , h1)
